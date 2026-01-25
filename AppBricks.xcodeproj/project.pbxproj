@@ -75,6 +75,7 @@
 		D4F5DA072F26B15A001A21BF = {
 			isa = PBXGroup;
 			children = (
+				D4F5DA3A2F26B43E001A21BF /* Documentation */,
 				D4F5DA122F26B15A001A21BF /* AppBricks */,
 				D4F5DA202F26B15C001A21BF /* AppBricksTests */,
 				D4F5DA2A2F26B15C001A21BF /* AppBricksUITests */,
@@ -90,6 +91,13 @@
 				D4F5DA272F26B15C001A21BF /* AppBricksUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D4F5DA3A2F26B43E001A21BF /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Documentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

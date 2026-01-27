@@ -1,13 +1,13 @@
 //
-//  AppBricksUITests.swift
-//  AppBricksUITests
+//  BrickListUITests.swift
+//  BrickListUITests
 //
-//  Created by Stephan Zehrer on 25.01.26.
+//  Created by Stephan Zehrer on 27.01.26.
 //
 
 import XCTest
 
-final class AppBricksUITests: XCTestCase {
+final class BrickListUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

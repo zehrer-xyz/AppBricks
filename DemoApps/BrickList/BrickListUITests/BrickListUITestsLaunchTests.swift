@@ -1,13 +1,13 @@
 //
-//  AppBricksUITestsLaunchTests.swift
-//  AppBricksUITests
+//  BrickListUITestsLaunchTests.swift
+//  BrickListUITests
 //
-//  Created by Stephan Zehrer on 25.01.26.
+//  Created by Stephan Zehrer on 27.01.26.
 //
 
 import XCTest
 
-final class AppBricksUITestsLaunchTests: XCTestCase {
+final class BrickListUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

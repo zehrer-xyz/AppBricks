@@ -1,8 +1,18 @@
 //
-//  BrickListApp.swift
-//  BrickList
+//  Copyright (c) 2026 zehrer.xyz
+//  Author: Stephan Zehrer
 //
-//  Created by Stephan Zehrer on 27.01.26.
+//  This file is part of AppBricks.
+//
+//  AppBricks is dual-licensed:
+//  - GPLv3 for open-source use
+//  - Commercial license required for proprietary use
+//
+// SPDX-License-Identifier: GPL-3.0-only
+//
+//  See the LICENSE file for details.
+//
+//  BrickListApp.swift
 //
 
 import SwiftUI

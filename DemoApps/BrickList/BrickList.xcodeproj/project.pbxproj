@@ -6,43 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		D4F5DAA72F289554001A21BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D4F5DA8F2F289552001A21BF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D4F5DA962F289552001A21BF;
-			remoteInfo = BrickList;
-		};
-		D4F5DAB12F289554001A21BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D4F5DA8F2F289552001A21BF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D4F5DA962F289552001A21BF;
-			remoteInfo = BrickList;
-		};
-/* End PBXContainerItemProxy section */
+/* Begin PBXBuildFile section */
+		D4955E732F2B38EF006FFC31 /* AppBrickCore in Frameworks */ = {isa = PBXBuildFile; productRef = D4955E722F2B38EF006FFC31 /* AppBrickCore */; };
+		D4955E762F2B38FF006FFC31 /* AppBrickUI in Frameworks */ = {isa = PBXBuildFile; productRef = D4955E752F2B38FF006FFC31 /* AppBrickUI */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D4F5DA972F289552001A21BF /* BrickList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrickList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4F5DAA62F289554001A21BF /* BrickListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrickListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4F5DAB02F289554001A21BF /* BrickListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrickListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D4F5DA992F289552001A21BF /* BrickList */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BrickList;
-			sourceTree = "<group>";
-		};
-		D4F5DAA92F289554001A21BF /* BrickListTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BrickListTests;
-			sourceTree = "<group>";
-		};
-		D4F5DAB32F289554001A21BF /* BrickListUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BrickListUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,20 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4F5DAA32F289554001A21BF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4F5DAAD2F289554001A21BF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D4955E762F2B38FF006FFC31 /* AppBrickUI in Frameworks */,
+				D4955E732F2B38EF006FFC31 /* AppBrickCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +40,6 @@
 			isa = PBXGroup;
 			children = (
 				D4F5DA992F289552001A21BF /* BrickList */,
-				D4F5DAA92F289554001A21BF /* BrickListTests */,
-				D4F5DAB32F289554001A21BF /* BrickListUITests */,
 				D4F5DA982F289552001A21BF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,8 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				D4F5DA972F289552001A21BF /* BrickList.app */,
-				D4F5DAA62F289554001A21BF /* BrickListTests.xctest */,
-				D4F5DAB02F289554001A21BF /* BrickListUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,56 +72,12 @@
 			);
 			name = BrickList;
 			packageProductDependencies = (
+				D4955E722F2B38EF006FFC31 /* AppBrickCore */,
+				D4955E752F2B38FF006FFC31 /* AppBrickUI */,
 			);
 			productName = BrickList;
 			productReference = D4F5DA972F289552001A21BF /* BrickList.app */;
 			productType = "com.apple.product-type.application";
-		};
-		D4F5DAA52F289554001A21BF /* BrickListTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D4F5DABD2F289554001A21BF /* Build configuration list for PBXNativeTarget "BrickListTests" */;
-			buildPhases = (
-				D4F5DAA22F289554001A21BF /* Sources */,
-				D4F5DAA32F289554001A21BF /* Frameworks */,
-				D4F5DAA42F289554001A21BF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D4F5DAA82F289554001A21BF /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D4F5DAA92F289554001A21BF /* BrickListTests */,
-			);
-			name = BrickListTests;
-			packageProductDependencies = (
-			);
-			productName = BrickListTests;
-			productReference = D4F5DAA62F289554001A21BF /* BrickListTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D4F5DAAF2F289554001A21BF /* BrickListUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D4F5DAC02F289554001A21BF /* Build configuration list for PBXNativeTarget "BrickListUITests" */;
-			buildPhases = (
-				D4F5DAAC2F289554001A21BF /* Sources */,
-				D4F5DAAD2F289554001A21BF /* Frameworks */,
-				D4F5DAAE2F289554001A21BF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D4F5DAB22F289554001A21BF /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D4F5DAB32F289554001A21BF /* BrickListUITests */,
-			);
-			name = BrickListUITests;
-			packageProductDependencies = (
-			);
-			productName = BrickListUITests;
-			productReference = D4F5DAB02F289554001A21BF /* BrickListUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -176,14 +92,6 @@
 					D4F5DA962F289552001A21BF = {
 						CreatedOnToolsVersion = 26.2;
 					};
-					D4F5DAA52F289554001A21BF = {
-						CreatedOnToolsVersion = 26.2;
-						TestTargetID = D4F5DA962F289552001A21BF;
-					};
-					D4F5DAAF2F289554001A21BF = {
-						CreatedOnToolsVersion = 26.2;
-						TestTargetID = D4F5DA962F289552001A21BF;
-					};
 				};
 			};
 			buildConfigurationList = D4F5DA922F289552001A21BF /* Build configuration list for PBXProject "BrickList" */;
@@ -195,34 +103,22 @@
 			);
 			mainGroup = D4F5DA8E2F289552001A21BF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D4955E712F2B38EF006FFC31 /* XCLocalSwiftPackageReference "../../packages/AppBrickCore" */,
+				D4955E742F2B38FF006FFC31 /* XCLocalSwiftPackageReference "../../packages/AppBrickUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D4F5DA982F289552001A21BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D4F5DA962F289552001A21BF /* BrickList */,
-				D4F5DAA52F289554001A21BF /* BrickListTests */,
-				D4F5DAAF2F289554001A21BF /* BrickListUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D4F5DA952F289552001A21BF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4F5DAA42F289554001A21BF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4F5DAAE2F289554001A21BF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,34 +135,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4F5DAA22F289554001A21BF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4F5DAAC2F289554001A21BF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D4F5DAA82F289554001A21BF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D4F5DA962F289552001A21BF /* BrickList */;
-			targetProxy = D4F5DAA72F289554001A21BF /* PBXContainerItemProxy */;
-		};
-		D4F5DAB22F289554001A21BF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D4F5DA962F289552001A21BF /* BrickList */;
-			targetProxy = D4F5DAB12F289554001A21BF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D4F5DAB82F289554001A21BF /* Debug */ = {
@@ -400,6 +269,8 @@
 				DEVELOPMENT_TEAM = NV9LC295QZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Brick List";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -409,16 +280,20 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.zehrer.BrickList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -432,6 +307,8 @@
 				DEVELOPMENT_TEAM = NV9LC295QZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Brick List";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -441,100 +318,20 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.zehrer.BrickList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		D4F5DABE2F289554001A21BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NV9LC295QZ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.zehrer.BrickListTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrickList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BrickList";
-			};
-			name = Debug;
-		};
-		D4F5DABF2F289554001A21BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NV9LC295QZ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.zehrer.BrickListTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrickList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BrickList";
-			};
-			name = Release;
-		};
-		D4F5DAC12F289554001A21BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NV9LC295QZ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.zehrer.BrickListUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BrickList;
-			};
-			name = Debug;
-		};
-		D4F5DAC22F289554001A21BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NV9LC295QZ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.zehrer.BrickListUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BrickList;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -559,25 +356,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4F5DABD2F289554001A21BF /* Build configuration list for PBXNativeTarget "BrickListTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D4F5DABE2F289554001A21BF /* Debug */,
-				D4F5DABF2F289554001A21BF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D4F5DAC02F289554001A21BF /* Build configuration list for PBXNativeTarget "BrickListUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D4F5DAC12F289554001A21BF /* Debug */,
-				D4F5DAC22F289554001A21BF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		D4955E712F2B38EF006FFC31 /* XCLocalSwiftPackageReference "../../packages/AppBrickCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../packages/AppBrickCore;
+		};
+		D4955E742F2B38FF006FFC31 /* XCLocalSwiftPackageReference "../../packages/AppBrickUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../packages/AppBrickUI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D4955E722F2B38EF006FFC31 /* AppBrickCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppBrickCore;
+		};
+		D4955E752F2B38FF006FFC31 /* AppBrickUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppBrickUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D4F5DA8F2F289552001A21BF /* Project object */;
 }

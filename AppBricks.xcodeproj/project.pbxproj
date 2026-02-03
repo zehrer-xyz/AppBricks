@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		D4955E622F29E6D7006FFC31 /* BrickNote.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BrickNote.xcodeproj; path = BrickNote/BrickNote.xcodeproj; sourceTree = "<group>"; };
 		D4F5DA3B2F27F760001A21BF /* requirements.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = requirements.md; sourceTree = "<group>"; };
 		D4F5DA3C2F27F78A001A21BF /* architecture.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = architecture.md; sourceTree = "<group>"; };
 		D4F5DA3F2F27F7F5001A21BF /* 0001-di-approach.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "0001-di-approach.md"; sourceTree = "<group>"; };
@@ -17,6 +18,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		D4955E632F29E6D7006FFC31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D4F5DA072F26B15A001A21BF = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +73,7 @@
 		D4F5DA432F2800B8001A21BF /* DemoApps */ = {
 			isa = PBXGroup;
 			children = (
+				D4955E622F29E6D7006FFC31 /* BrickNote.xcodeproj */,
 				D4F5DAC32F289555001A21BF /* BrickList.xcodeproj */,
 			);
 			path = DemoApps;
@@ -103,6 +112,10 @@
 				{
 					ProductGroup = D4F5DAC42F289555001A21BF /* Products */;
 					ProjectRef = D4F5DAC32F289555001A21BF /* BrickList.xcodeproj */;
+				},
+				{
+					ProductGroup = D4955E632F29E6D7006FFC31 /* Products */;
+					ProjectRef = D4955E622F29E6D7006FFC31 /* BrickNote.xcodeproj */;
 				},
 			);
 			projectRoot = "";

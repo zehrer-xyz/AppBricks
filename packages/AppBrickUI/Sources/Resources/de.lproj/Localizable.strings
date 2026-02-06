@@ -24,3 +24,22 @@
 "tags.accessibility.selected" = "Ausgewählt";
 "tags.accessibility.not_selected" = "Nicht ausgewählt";
 "tags.accessibility.hint.create" = "Erstellt einen neuen Tag";
+
+"color.none" = "Keine Farbe";
+"color.red" = "Rot";
+"color.orange" = "Orange";
+"color.yellow" = "Gelb";
+"color.green" = "Grün";
+"color.blue" = "Blau";
+"color.purple" = "Violett";
+"color.gray" = "Grau";
+"color.black" = "Schwarz";
+"color.white" = "Weiß";
+"color.cyan" = "Cyan";
+"color.brown" = "Braun";
+"color.indigo" = "Indigo";
+"color.pink" = "Pink";
+"color.mint" = "Minze";
+"color.teal" = "Blaugrün";
+"color.clear" = "Transparent";
+"color.unknown" = "Unbekannt";

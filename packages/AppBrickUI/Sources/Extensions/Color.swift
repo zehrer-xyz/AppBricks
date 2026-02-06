@@ -19,19 +19,21 @@ import SwiftUI
 
 enum SimpleColor: UInt8, CaseIterable, Identifiable {
 
-    case red    = 0
-    case orange = 1
-    case yellow = 2
-    case green  = 3
-    case blue   = 4
-    case purple = 5
-    case gray   = 6
-
+    case none   = 0
+    case red    = 1
+    case orange = 2
+    case yellow = 3
+    case green  = 4
+    case blue   = 5
+    case purple = 6
+    case gray   = 7
+    
     
     var id: UInt8 { rawValue }
     
     var color: Color? {
         switch self {
+        case .none:    nil
         case .red:    .red
         case .orange: .orange
         case .yellow: .yellow
@@ -41,7 +43,19 @@ enum SimpleColor: UInt8, CaseIterable, Identifiable {
         case .gray:   .gray
         }
     }
-
+    
+    static func labelName(_ label: SimpleColor) -> LocalizedStringKey {
+        switch label {
+        case .none:  "color.none"
+        case .red:    "color.red"
+        case .orange: "color.orange"
+        case .yellow: "color.yellow"
+        case .green:  "color.green"
+        case .blue:   "color.blue"
+        case .purple: "color.purple"
+        case .gray:   "color.gray"
+        }
+    }
 }
 
 extension Color {
@@ -65,7 +79,7 @@ extension Color {
         case .teal:   "color.teal"
         case .clear:  "color.clear"
         default:
-            "color.unknow"
+            "color.unknown"
         }
     }
 }

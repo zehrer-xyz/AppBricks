@@ -1,0 +1,26 @@
+//
+//  Copyright (c) 2026 zehrer.xyz
+//  Author: Stephan Zehrer
+//
+//  This file is part of AppBricks.
+//
+//  AppBricks is dual-licensed:
+//  - GPLv3 for open-source use
+//  - Commercial license required for proprietary use
+//
+// SPDX-License-Identifier: GPL-3.0-only
+//
+//  See the LICENSE file for details.
+//
+//  Localizable.strings - German
+//
+
+"tags.header" = "Tags";
+"tags.footer.add_new" = "Neuen Tag mit optionaler Farbe hinzufügen.";
+"tags.placeholder.name" = "Tag-Name";
+"tags.picker.color" = "Farbe";
+"tags.button.add_new" = "Neuen Tag hinzufügen";
+"tags.title" = "Tag hinzufügen";
+"tags.accessibility.selected" = "Ausgewählt";
+"tags.accessibility.not_selected" = "Nicht ausgewählt";
+"tags.accessibility.hint.create" = "Erstellt einen neuen Tag";

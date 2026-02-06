@@ -41,7 +41,7 @@ struct TagListView: View {
 
     var body: some View {
         List {
-            Section(header: Text("tags.header")) {
+            Section(header: Text("tags.header", bundle: .module)) {
                 ForEach(tags) { tag in
                     Button(action: { toggleSelection(for: tag) }) {
                         HStack(spacing: 12) {
@@ -58,29 +58,29 @@ struct TagListView: View {
                     .contentShape(Rectangle())
                     .accessibilityElement(children: .combine)
                     .accessibilityLabel(Text(tag.name))
-                    .accessibilityValue(Text(isSelected(tag) ? "tags.accessibility.selected" : "tags.accessibility.not_selected"))
+                    .accessibilityValue(Text(isSelected(tag) ? "tags.accessibility.selected" : "tags.accessibility.not_selected", bundle: .module))
                 }
             }
 
-            Section(footer: Text("tags.footer.add_new")) {
+            Section(footer: Text("tags.footer.add_new", bundle: .module)) {
                 VStack(alignment: .leading, spacing: 8) {
                     HStack(spacing: 8) {
                         Image(systemName: "plus.circle.fill")
                             .foregroundStyle(.green)
-                        TextField("tags.placeholder.name", text: $newTagName)
+                        TextField(String(localized: "tags.placeholder.name", bundle: .module), text: $newTagName)
                             .textInputAutocapitalization(.words)
                             .autocorrectionDisabled(false)
                     }
 
                     HStack {
                         Menu {
-                            Picker("tags.picker.color", selection: $newTagColor) {
+                            Picker(String(localized: "tags.picker.color", bundle: .module), selection: $newTagColor) {
                                 ForEach(SimpleColor.allCases) { option in
                                     HStack {
                                         Circle()
                                             .fill(option.color ?? .secondary.opacity(0.3))
                                             .frame(width: 12, height: 12)
-                                        Text(SimpleColor.labelName(option))
+                                        Text(SimpleColor.labelName(option), bundle: .module)
                                     }
                                     .tag(option)
                                 }
@@ -90,7 +90,7 @@ struct TagListView: View {
                                 Circle()
                                     .fill(newTagColor.color ?? .secondary.opacity(0.3))
                                     .frame(width: 16, height: 16)
-                                Text(SimpleColor.labelName(newTagColor))
+                                Text(SimpleColor.labelName(newTagColor), bundle: .module)
                                 Image(systemName: "chevron.up.chevron.down")
                                     .font(.footnote)
                                     .foregroundStyle(.secondary)
@@ -103,17 +103,21 @@ struct TagListView: View {
                         Spacer()
 
                         Button(action: addNewTag) {
-                            Label("tags.button.add_new", systemImage: "plus")
+                            Label {
+                                Text("tags.button.add_new", bundle: .module)
+                            } icon: {
+                                Image(systemName: "plus")
+                            }
                         }
                         .buttonStyle(.borderedProminent)
                         .disabled(!canAddNewTag)
-                        .accessibilityHint(Text("tags.accessibility.hint.create"))
+                        .accessibilityHint(Text("tags.accessibility.hint.create", bundle: .module))
                     }
                 }
                 .padding(.vertical, 4)
             }
         }
-        .navigationTitle(Text("tags.title"))
+        .navigationTitle(Text("tags.title", bundle: .module))
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 Button(role: .cancel) { dismiss() } label: {
@@ -217,5 +221,11 @@ struct TagListView: View {
         TagListView()
     }
     .modelContainer(container)
+    .environment(\.locale, Locale(identifier: "en"))
 }
 
+
+#Preview("English") {
+    NavigationStack { TagListView() }
+        .environment(\.locale, Locale(identifier: "en"))
+}

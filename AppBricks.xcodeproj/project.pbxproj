@@ -10,6 +10,7 @@
 		D4955E622F29E6D7006FFC31 /* BrickNote.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BrickNote.xcodeproj; path = BrickNote/BrickNote.xcodeproj; sourceTree = "<group>"; };
 		D4C2E3DA2F31DA54003D3577 /* Home.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Home.md; sourceTree = "<group>"; };
 		D4C2E3E22F31DB0F003D3577 /* Tag-Colors.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Tag-Colors.md"; sourceTree = "<group>"; };
+		D4C2E3F52F35CD79003D3577 /* TagListView.md */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.md; sourceTree = "<group>"; };
 		D4F5DA3B2F27F760001A21BF /* requirements.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = requirements.md; sourceTree = "<group>"; };
 		D4F5DA3C2F27F78A001A21BF /* architecture.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = architecture.md; sourceTree = "<group>"; };
 		D4F5DA3F2F27F7F5001A21BF /* 0001-di-approach.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "0001-di-approach.md"; sourceTree = "<group>"; };
@@ -30,6 +31,7 @@
 		D4C2E3DB2F31DA54003D3577 /* AppBricks.wiki */ = {
 			isa = PBXGroup;
 			children = (
+				D4C2E3F52F35CD79003D3577 /* TagListView.md */,
 				D4C2E3E22F31DB0F003D3577 /* Tag-Colors.md */,
 				D4C2E3DA2F31DA54003D3577 /* Home.md */,
 			);
